@@ -1,14 +1,14 @@
 import { useState } from 'react'
-import { Menu, X, Flame, Sparkles } from 'lucide-react'
+import { Menu, X, ShieldCheck, ShoppingBag } from 'lucide-react'
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
 
   const navItems = [
-    { href: '#features', label: 'Features' },
-    { href: '#showcase', label: 'Showcase' },
-    { href: '#pricing', label: 'Pricing' },
-    { href: '#testimonials', label: 'Stories' },
+    { href: '#shop', label: 'Shop' },
+    { href: '#features', label: 'Why us' },
+    { href: '#pricing', label: 'Bundles' },
+    { href: '#testimonials', label: 'Reviews' },
   ]
 
   return (
@@ -16,10 +16,10 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="h-16 flex items-center justify-between">
           <a href="#" className="inline-flex items-center gap-2 text-white">
-            <span className="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-gradient-to-br from-sky-500 to-indigo-500 text-white shadow-lg shadow-sky-500/30">
-              <Flame className="w-5 h-5" />
+            <span className="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-gradient-to-br from-pink-500 to-amber-500 text-white shadow-lg">
+              <ShoppingBag className="w-5 h-5" />
             </span>
-            <span className="font-semibold tracking-tight">Flames Blue</span>
+            <span className="font-semibold tracking-tight">Donut SMP IRL</span>
           </a>
 
           <nav className="hidden md:flex items-center gap-8">
@@ -28,9 +28,9 @@ export default function Navbar() {
                 {item.label}
               </a>
             ))}
-            <a href="#get-started" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-sky-500 to-indigo-500 text-white shadow-md shadow-sky-500/40 hover:shadow-lg">
-              <Sparkles className="w-4 h-4" />
-              Get started
+            <a href="#shop" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-pink-500 to-amber-500 text-white shadow-md hover:shadow-lg">
+              <ShoppingBag className="w-4 h-4" />
+              Buy now
             </a>
           </nav>
 
@@ -48,10 +48,14 @@ export default function Navbar() {
                 {item.label}
               </a>
             ))}
-            <a href="#get-started" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-sky-500 to-indigo-500 text-white">
-              <Sparkles className="w-4 h-4" />
-              Get started
+            <a href="#shop" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-pink-500 to-amber-500 text-white">
+              <ShoppingBag className="w-4 h-4" />
+              Buy now
             </a>
+            <div className="flex items-center gap-2 text-emerald-400 pt-2">
+              <ShieldCheck className="w-4 h-4" />
+              <span className="text-sm">Verified sellers only</span>
+            </div>
           </div>
         </div>
       )}

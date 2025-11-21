@@ -19,9 +19,9 @@ function App() {
         <Testimonials />
         <section id="get-started" className="py-20">
           <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h3 className="text-2xl sm:text-3xl font-bold">Ready to ship faster?</h3>
-            <p className="mt-2 text-slate-300">Tell me what you want to see next and I’ll adapt the layout to match.</p>
-            <a href="/test" className="mt-6 inline-block rounded-xl bg-gradient-to-r from-sky-500 to-indigo-500 px-6 py-3 font-semibold text-white shadow-lg">Open system test</a>
+            <h3 className="text-2xl sm:text-3xl font-bold">Ready to grab a deal?</h3>
+            <p className="mt-2 text-slate-300">Browse verified listings for Donut SMP IRL trades, fast and safe.</p>
+            <a href="#shop" className="mt-6 inline-block rounded-xl bg-gradient-to-r from-pink-500 to-amber-500 px-6 py-3 font-semibold text-white shadow-lg">Browse the shop</a>
           </div>
         </section>
       </main>
